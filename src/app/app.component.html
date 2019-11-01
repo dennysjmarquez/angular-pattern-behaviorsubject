@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div>
+
+    <h1 style="margin-top: 20px; margin-bottom: 30px">El patr&oacute;n <strong>behaviorsubject</strong></h1>
+
+    <div style="border: 1px solid; padding: 10px">
+
+      <h3>Component App</h3>
+
+      <div style="display: flex; flex-direction: row; flex-wrap: wrap; padding: 10px; border: 1px solid">
+        <div style="flex: 2">
+          <app-c1></app-c1>
+        </div>
+        <div style="width: 50px"></div>
+        <div style="flex: 2">
+          <app-c3></app-c3>
+        </div>
+      </div>
+
+
+      <hr *ngIf="mensaje" />
+
+      <div *ngIf="mensaje" style="padding: 20px;display: flex;position: relative;justify-content: center;word-break: break-word;">
+
+        <span>
+
+          Este es un mensaje resivido en el <strong> ngOnInit</strong> del
+
+          <strong>componente App</strong> del state$: <br/><br/><P>Mensaje:<strong> {{ mensaje}}</strong></P>
+
+        </span>
+
+      </div>
+    </div>
+  </div>
+
+</div>
